@@ -19,15 +19,19 @@
         place-items: center;
       }
 
+      :root {
+        --animationDuration: 6s;
+      }
+
       .wrapper {
-        width: 500px;
+        width: 1080px;
       }
 
       #all-tok {
         opacity: 0;
         transform-box: fill-box;
         transform-origin: center;
-        animation: signIn 6s ease-in-out infinite;
+        animation: signIn var(--animationDuration) ease-in-out infinite;
       }
 
       @keyframes signIn {
@@ -71,7 +75,7 @@
       /* One */
 
       #one {
-        animation: slideIn1 6s ease-out infinite;
+        animation: slideIn1 var(--animationDuration) ease-out infinite;
       }
 
       @keyframes slideIn1 {
@@ -95,7 +99,7 @@
       /* Two */
 
       #two {
-        animation: slideIn2 6s ease-out infinite;
+        animation: slideIn2 var(--animationDuration) ease-out infinite;
       }
 
       @keyframes slideIn2 {
@@ -120,7 +124,7 @@
       /* Three */
 
       #three {
-        animation: slideIn3 6s ease-out infinite;
+        animation: slideIn3 var(--animationDuration) ease-out infinite;
       }
 
       @keyframes slideIn3 {
@@ -145,7 +149,7 @@
       /* Four */
 
       #four {
-        animation: slideIn4 6s ease-out infinite;
+        animation: slideIn4 var(--animationDuration) ease-out infinite;
       }
 
       @keyframes slideIn4 {
@@ -170,7 +174,7 @@
       /* Five */
 
       #five {
-        animation: slideIn5 6s ease-out infinite;
+        animation: slideIn5 var(--animationDuration) ease-out infinite;
       }
 
       @keyframes slideIn5 {
@@ -195,7 +199,7 @@
       /* Six */
 
       #six {
-        animation: slideIn6 6s ease-out infinite;
+        animation: slideIn6 var(--animationDuration) ease-out infinite;
       }
 
       @keyframes slideIn6 {
@@ -220,7 +224,7 @@
       /* Seven */
 
       #seven {
-        animation: slideIn7 6s ease-out infinite;
+        animation: slideIn7 var(--animationDuration) ease-out infinite;
       }
 
       @keyframes slideIn7 {
@@ -243,7 +247,7 @@
       }
 
       #front {
-        animation: reverseFront 6s ease-out infinite;
+        animation: reverseFront var(--animationDuration) ease-out infinite;
       }
 
       @keyframes reverseFront {
@@ -269,7 +273,7 @@
 
       #mid {
         opacity: 0;
-        animation: appearMid 6s ease-out infinite;
+        animation: appearMid var(--animationDuration) ease-out infinite;
       }
 
       @keyframes appearMid {
@@ -297,7 +301,7 @@
 
       #back {
         opacity: 0;
-        animation: appearBack 6s ease-out infinite;
+        animation: appearBack var(--animationDuration) ease-out infinite;
       }
 
       @keyframes appearBack {
@@ -325,7 +329,7 @@
 
       #text {
         clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-        animation: clipIn 6s ease-in-out infinite;
+        animation: clipIn var(--animationDuration) ease-in-out infinite;
       }
 
       @keyframes clipIn {
